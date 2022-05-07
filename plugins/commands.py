@@ -34,15 +34,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚚ ᗩᗪᗪ ᗰE TO YOᑌᖇ GᖇOᑌᑭ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚚ ADD ME TO YOUR GROUP ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 ᑕᕼᗩᑎᑎEᒪ 💠', url='https://t.me/ottanymovies'),
-            InlineKeyboardButton('💠 ᑌᑭᗪᗩTEᔕ 💠', url='https://t.me/+u1JcQCKM7tYzYzBl')
+            InlineKeyboardButton('💠 CHANNEL 💠', url='https://t.me/ottanymovies'),
+            InlineKeyboardButton('💠 UPDATES 💠', url='https://t.me/+u1JcQCKM7tYzYzBl')
             ],[      
-            InlineKeyboardButton('♻️ ᕼEᒪᑭ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ᗩᗷOᑌT ♻️', callback_data='about')
+            InlineKeyboardButton('♻️ HELP  ♻️', callback_data='help'),
+            InlineKeyboardButton('♻️ ABOUT ♻️', callback_data='about')
             ],[
-            InlineKeyboardButton('👨‍💻 ᗪEᐯEᒪOᑭEᖇ  👨‍💻', url='https://t.me/faisalkvr')
+            InlineKeyboardButton('👨‍💻 DEVELOPER  👨‍💻', url='https://t.me/faisalkvr')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -77,15 +77,15 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('⚚ ᗩᗪᗪ ᗰE TO YOᑌᖇ GᖇOᑌᑭ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚚ ADD ME TO YOUR GROUP ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 ᑕᕼᗩᑎᑎEᒪ 💠', url='https://t.me/ottanymovies'),
-            InlineKeyboardButton('💠 ᑌᑭᗪᗩTEᔕ 💠', url='https://t.me/+u1JcQCKM7tYzYzBl')
+            InlineKeyboardButton('💠 CHANNEL 💠', url='https://t.me/ottanymovies'),
+            InlineKeyboardButton('💠 UPDATES 💠', url='https://t.me/+u1JcQCKM7tYzYzBl')
             ],[      
-            InlineKeyboardButton('♻️ ᕼEᒪᑭ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ᗩᗷOᑌT ♻️', callback_data='about')
+            InlineKeyboardButton('♻️ HELP  ♻️', callback_data='help'),
+            InlineKeyboardButton('♻️ ABOUT ♻️', callback_data='about')
             ],[
-            InlineKeyboardButton('👨‍💻 ᗪEᐯEᒪOᑭEᖇ  👨‍💻', url='https://t.me/faisalkvr')
+            InlineKeyboardButton('👨‍💻 DEVELOPER  👨‍💻', url='https://t.me/faisalkvr')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
